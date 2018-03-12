@@ -45,7 +45,7 @@ while goblin.health > 0 and hero.health > 0:
 
     if goblin.health > 0:
         # Goblin attacks hero
-        hero.health -= gobbo.power
+        hero.health -= goblin.power
         print("The goblin does {} damage to you.".format(goblin.power))
         if hero.health <= 0:
             print("You are dead.")
