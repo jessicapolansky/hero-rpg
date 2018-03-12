@@ -8,13 +8,13 @@
 
 class Hero:
     def __init__(self):
-        health = 10
-        power = 5
+        self.health = 10
+        self.power = 5
         
 class Goblin:
-    def __init(self):
-        health = 6
-        power = 2
+    def __init__(self):
+        self.health = 6
+        self.power = 2
     
 hero = Hero()
 goblin = Goblin()
