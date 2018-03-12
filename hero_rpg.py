@@ -20,6 +20,8 @@ class Hero:
             return True
         else:
             return False
+    def print_status(self):
+        print("You have {} health and {} power.".format(self.health, self.power))
         
         
 class Goblin:
@@ -36,13 +38,15 @@ class Goblin:
             return True
         else:
             return False
+    def print_status(self):
+        print("The goblin has {} health and {} power.".format(self.health, self.power))
     
 hero = Hero()
 goblin = Goblin()
 
 while goblin.alive() and hero.alive():
-    print("You have {} health and {} power.".format(hero.health, hero.power))
-    print("The goblin has {} health and {} power.".format(goblin.health, goblin.power))
+    hero.print_status()
+    goblin.print_status()
     print()
     print("What do you want to do?")
     print("1. fight goblin")
